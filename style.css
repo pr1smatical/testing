@@ -1,0 +1,360 @@
+html,body{
+    height:100%;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+div{
+    display:block;
+}
+
+.nav-container{
+    margin:0 auto;
+    margin: 0 2%;
+    position: relative;
+}
+
+.header_top{
+  background-color: #182E4F;
+}
+.nav-bar{
+  display:flex;
+  justify-content:center;
+  flex-direction: center;
+  flex-wrap:wrap;
+  padding:0px 25px;
+}
+.nav-bar > .logo{
+  padding-right:10%;
+}
+.nav-bar ul{
+  padding:0px;
+  margin:0px;
+  display:inline-block;
+}
+
+.nav-bar li{
+  list-style-type:none;
+  display:inline-block;
+  justify-content: space-between;
+  padding:30px;
+}
+
+
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+  }
+  
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  @media (max-width: 1100px) {
+    .hamburger {
+      display: block;
+      z-index: 15;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      gap: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #222;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+      width: 100%;
+      min-height: 100vh;
+      text-align: center;
+      transition: 0.6s ease-in-out;
+      z-index: 10;
+    }
+    .active {
+      right: 0% !important;
+    }
+  }
+
+.header{
+    background-image:url('Group\ 5.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+}
+
+.center_text{
+    display:flex;
+    flex-direction: flex-start;
+    max-width:650px;
+    padding-left:4%;
+}
+
+
+/* .center_text > .button{
+  flex-direction:flex-end;
+  align-items:center;
+} */
+
+.button{
+  display:flex;
+  align-items:center;
+  background: #3771C8;
+  border-radius: 10px;
+  text-align:center;
+  padding-left:3%;
+  margin-top:2%;
+  margin-left:4%;
+  height:65px;
+  width: 200px;
+}
+
+.social_medias{
+  background-color: #F5FEFF;
+  width: 100%;
+  height: 60px;
+  margin-bottom:2%;
+}
+.text_area{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.text_area > *{
+  display:inline-block;
+  padding-left:10px;
+}
+
+.text_area img{
+  height:45px;
+}
+.button h4{
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 37px;
+}
+.info_serial{
+    font-size:20pt;
+    text-align:justify;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    padding-top:30%;
+}
+
+
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0fr 0fr 0fr;
+  gap: 10px;
+  grid-auto-flow: row;
+}
+
+.text-below{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-below h3{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: justify;
+  letter-spacing: 0.1em;
+}
+.container *{
+  position: relative;
+  height:200px;
+  background-color:grey;
+}
+
+.center_text_actor{
+    display:inline-block;
+    max-width:1920px;
+    margin-top:2%;
+    width:100%;
+}
+.center_text_actor h2{
+    float:left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: 0.1em;
+}
+
+.center_text_actor a{
+    float:right;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color:black;
+    margin:20px;
+    margin-left:10%;
+
+}
+
+.seasons{
+  margin-top:2%;
+  margin-bottom:3%;
+}
+.margin-x{
+  margin-left:30px;
+  margin-right:30px;
+}
+.wrapper {
+    margin:0 auto;
+    margin: 0 7%;
+    position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #3771C8;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+
+.footer{
+  background-color: #182E4F;
+  height:260px;
+}
+.flex-section{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+
+
+
+
